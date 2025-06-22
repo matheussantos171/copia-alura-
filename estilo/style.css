@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+/* variaveis */
+
+:root{
+    --cor-titulo: #FFFFFF;
+    --cinza-secundario:#c0c0c0;
+    --botao-azul:#167dff;
+    --cor-fundo:#00030c;
+
+}
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-titulo);
+    font-family: "Inter", sans-serif;
+}
+
+/* config do conteudo princiapl */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.conteudo_principal{
+    background-image: url(../img/Background.png);
+    height: 100vh;
+    width: 100%;
+    background-position: -60px 0;
+    color: var(--cor-titulo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    padding: 0 1%;
+}
+
+/* config do conteudo_texto */
+
+.conteudo_texto{
+    width: 40%;
+    text-align: center;
+}
+
+/* config titulo principal */
+
+.titulo_principal{
+    font-size: 1.60rem;
+    font-weight: bold;
+}
+
+/* imagem do combo */
+
+.imagem_combo{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* config dos botoes */
+
+.conteudo_botoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+
+.botao_principal{
+    background-color: var(--botao-azul);
+    color: var(--cor-titulo);
+    margin: 10px auto;
+    padding: 15px;
+    width: 70%;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.botao_secundario{
+    background-color: var(--cor-fundo);
+    color: var(--cinza-secundario);
+    border: 1px solid var(--cinza-secundario);
+}
+
+.botao_principal:hover{
+    background-color: #115db9;
+}
+
+.botao_secundario:hover{
+    background-color:#c2c1c142;
+    color:rgba(255, 255, 255, 0.651);
+}
+
+/* botoes observação */
+
+.botoes_obs{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    font-weight: regular;
+}
+
+/* conteudo secundario */
+
+.conteudo_secundario_quarto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+}
+
+/* imagem secundaria */
+
+.conteudo_imagem_secundario_quarto{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* texto secundario */
+
+.conteudo_texto_secundario_quarto{
+    width: 70%;
+    text-align: center;
+    font-size: 1.35rem;
+}
+
+.segundario_paragrafo_quarto{
+    margin: 10px 0;
+    color: var(--cinza-secundario);
+    font-size: 1.1rem;
+}
+
+/* conteudo terciario */
+
+.conteudo_terciario {
+    display: flex;
+    align-items: center;       /* Centraliza horizontalmente */
+    padding: 6.5% 10%;
+}
+
+.conteudo_paragrafo_terciario{
+    color: var(--cinza-secundario);
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* config botao terciario */
+
+.botao_terciario{
+    padding: 15px 10px;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cor-titulo);
+    margin-left: 2%;
+}
+
+.botao_terciario:hover{
+    background-color:  #1055aa;
+}
+
+/* conteudo quatro */
+
+.quarto_conteudo{
+    padding: 8.5% 10%;
+}
+
+/* onde é responsivo */
+
+.dispositivos_conteiner{
+     padding: 8.5% 10%;
+}
+
+.dispositivos_titulo{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 80px;
+}
+
+.dispositivos_logos{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* rodape */
+
+.logo_rodape{
+    margin-bottom: 20px;
+}
+
+.rodape{
+    text-align: center;
+    padding: 8% 5% .5% 5%;
+    color: var(--cinza-secundario);    
+}
